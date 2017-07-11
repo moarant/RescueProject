@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title >Pet Stories</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="homebackground" text-align: center padding>
+  <h3>Every Pet Has a Story</h3>
+
+  <p style= "text-align: center">
+    Select An Option To Get Started
+  </p>
+  <ion-row>
+    <ion-col style="text-align: center">
+  <button class=button-block ion-button [navPush]="selectViewAdoptablePetsPage">Search Adoptable Pets</button>
+  </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col style="text-align: center">
+      <p> Create Or Update An Adoption Page</p>
+      <!--<button class=button-block ion-button [navPush]="selectViewAdoptablePetsPage">Search Adoptable Pets</button>-->
+  <button class=button-block ion-button [navPush]="adoptPageLoginPage">The Story Begins</button>
+    </ion-col>
+    </ion-row>
+  <ion-row>
+  <ion-col  style= "text-align: center">
+    <p> Create Or Update A Success Page</p>
+  <button class=button-block ion-button>Continue the Story</button>
+   </ion-col>
+  </ion-row>
+  
+</ion-content>
