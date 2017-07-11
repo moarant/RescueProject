@@ -20,7 +20,7 @@
   <p style= "text-align: center">
     Select to view adoptable pets
   </p>
-  <ion-row>
+ <!-- <ion-row>
     <ion-col style="text-align: center">
   <button class=button-block ion-button>Cats</button>
   </ion-col>
@@ -30,6 +30,17 @@
   <button class=button-block ion-button>Dogs</button>
     </ion-col>
     </ion-row>
-
+-->
+<ion-list >
+  <ion-item *ngFor="let pet of pets">
+    <ion-thumbnail item-start>
+      <img src={{pet.picture}}>
+    </ion-thumbnail>
+    <h2>{{pet.name}}</h2>
+    <p>{{pet.petType}} • {{pet.petAge}}</p>
+    <p>{{pet.location}}</p>
+    <button ion-button clear item-end>View</button>
+  </ion-item>
+</ion-list>
 
 </ion-content>
